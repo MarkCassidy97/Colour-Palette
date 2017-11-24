@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/javascript.js"></script>
+</head>
+
+<img class="palette-img" src="images/color-palette-color-wheel.jpg"/>
+
+<div class="container container-fluid">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <div class="col-xs-3 col-sm-4"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">#</span>
+                            <input type="text" class="form-control" id="hex" value="" placeholder="Enter Hex Code"  onkeyup="getValue()">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-xs-3 col-sm-4"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">%</span>
+                            <input type="number" class="form-control" id="percent" name="msg" placeholder="e.g. 25" max="100" onkeyup="getValue()" step="5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+</div>
+
+<div class="container-fluid">
+
+<h1 class="light-dark-header">Lighter</h1>
+<div class="col-xs-12">
+    <div id="boxLight"></div>
+</div>
+
+<h1 class="light-dark-header">Darker</h1>
+
+<div class="col-xs-12">
+    <div id="boxDark"></div>
+</div>
+
+</div>
+</html>
